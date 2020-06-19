@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gurps>
+  <charakter ID="1">
+    <spieler>
+      <spielername>spielername1</spielername>
+      <charname>charname1</charname>
+      <charstory>charstory1</charstory>
+      <gebjahr>1</gebjahr>
+      <reihenfolge>1</reihenfolge>
+    </spieler>
+    <attribute>
+      <stats>
+        <cpgesamt>0</cpgesamt>
+        <staerke>0</staerke>
+        <geschicklichkeit>0</geschicklichkeit>
+        <intelligenz>0</intelligenz>
+        <konstitution>0</konstitution>
+      </stats>
+      <bewegung>
+        <grundgeschwindigkeit>0</grundgeschwindigkeit>
+        <belastungswert>1</belastungswert>
+      </bewegung>
+      <schaden>
+        <schwungschaden>0</schwungschaden>
+        <stossschaden>0</stossschaden>
+      </schaden>
+      <faehigkeiten>
+        <physischefaehigkeiten>
+          <fertigkeit name="name1">
+            <beschreibung>beschreibung1</beschreibung>
+            <wert>0</wert>
+          </fertigkeit>
+        </physischefaehigkeiten>
+        <mentalefaehigkeiten>
+          <fertigkeit name="name2">
+            <beschreibung>beschreibung2</beschreibung>
+            <wert>1</wert>
+          </fertigkeit>
+        </mentalefaehigkeiten>
+      </faehigkeiten>
+      <vorteile name="name1">
+        <cp>0</cp>
+        <beschreibung>beschreibung1</beschreibung>
+      </vorteile>
+      <nachteile name="name1">
+        <cp>0</cp>
+        <beschreibung>beschreibung1</beschreibung>
+      </nachteile>
+      <marotten name="name1">
+        <cp>0</cp>
+        <beschreibung>beschreibung1</beschreibung>
+      </marotten>
+    </attribute>
+    <inventar>
+      <gegenstand name="name1">
+        <preis>1</preis>
+        <gewicht>0</gewicht>
+        <anzahl>0</anzahl>
+        <itemstats>
+          <reichweite>0</reichweite>
+          <schadenshoehe>0</schadenshoehe>
+          <schadenstyp>0</schadenstyp>
+          <fertigkeitswert>0</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name2">
+        <preis>1</preis>
+        <gewicht>1</gewicht>
+        <anzahl>1</anzahl>
+        <itemstats>
+          <reichweite>1</reichweite>
+          <schadenshoehe>1</schadenshoehe>
+          <schadenstyp>schadenstyp1</schadenstyp>
+          <fertigkeitswert>1</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name3">
+        <preis>-2147483647</preis>
+        <gewicht>-2147483647</gewicht>
+        <anzahl>-2147483647</anzahl>
+        <itemstats>
+          <reichweite>-2147483647</reichweite>
+          <schadenshoehe>-2147483647</schadenshoehe>
+          <schadenstyp>schadenstyp2</schadenstyp>
+          <fertigkeitswert>-2147483647</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+    </inventar>
+  </charakter>
+  <charakter ID="-2147483647">
+    <spieler>
+      <spielername>spielername2</spielername>
+      <charname>charname2</charname>
+      <charstory>charstory2</charstory>
+      <gebjahr>-2147483647</gebjahr>
+      <reihenfolge>-2147483647</reihenfolge>
+    </spieler>
+    <attribute>
+      <stats>
+        <cpgesamt>1</cpgesamt>
+        <staerke>1</staerke>
+        <geschicklichkeit>1</geschicklichkeit>
+        <intelligenz>1</intelligenz>
+      </stats>
+      <bewegung>
+        <grundgeschwindigkeit>1</grundgeschwindigkeit>
+        <belastungswert>-2147483647</belastungswert>
+      </bewegung>
+      <schaden>
+        <schwungschaden>1</schwungschaden>
+        <stossschaden>1</stossschaden>
+      </schaden>
+      <faehigkeiten>
+        <physischefaehigkeiten>
+          <fertigkeit name="name3">
+            <beschreibung>beschreibung3</beschreibung>
+            <wert>-2147483647</wert>
+          </fertigkeit>
+        </physischefaehigkeiten>
+        <mentalefaehigkeiten>
+          <fertigkeit name="name4">
+            <beschreibung>beschreibung4</beschreibung>
+            <wert>2147483647</wert>
+          </fertigkeit>
+        </mentalefaehigkeiten>
+      </faehigkeiten>
+      <vorteile name="name2">
+        <cp>1</cp>
+        <beschreibung>beschreibung2</beschreibung>
+      </vorteile>
+      <nachteile name="name2">
+        <cp>1</cp>
+        <beschreibung>beschreibung2</beschreibung>
+      </nachteile>
+      <marotten name="name2">
+        <cp>1</cp>
+        <beschreibung>beschreibung2</beschreibung>
+      </marotten>
+    </attribute>
+    <inventar>
+      <gegenstand name="name4">
+        <preis>2147483647</preis>
+        <gewicht>2147483647</gewicht>
+        <anzahl>2147483647</anzahl>
+        <itemstats>
+          <reichweite>2147483647</reichweite>
+          <schadenshoehe>2147483647</schadenshoehe>
+          <schadenstyp>schadenstyp3</schadenstyp>
+          <fertigkeitswert>2147483647</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name5">
+        <preis>0</preis>
+        <gewicht>0</gewicht>
+        <anzahl>0</anzahl>
+        <itemstats>
+          <reichweite>0</reichweite>
+          <schadenshoehe>0</schadenshoehe>
+          <schadenstyp>schadenstyp4</schadenstyp>
+          <fertigkeitswert>0</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name6">
+        <preis>2</preis>
+        <gewicht>2</gewicht>
+        <anzahl>2</anzahl>
+        <itemstats>
+          <reichweite>2</reichweite>
+          <schadenshoehe>2</schadenshoehe>
+          <schadenstyp>schadenstyp5</schadenstyp>
+          <fertigkeitswert>2</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+    </inventar>
+  </charakter>
+  <charakter ID="2147483647">
+    <spieler>
+      <spielername>spielername3</spielername>
+      <charname>charname3</charname>
+      <charstory>charstory3</charstory>
+      <gebjahr>2147483647</gebjahr>
+      <reihenfolge>2147483647</reihenfolge>
+    </spieler>
+    <attribute>
+      <stats>
+        <cpgesamt>-2147483647</cpgesamt>
+        <staerke>-2147483647</staerke>
+        <geschicklichkeit>-2147483647</geschicklichkeit>
+        <intelligenz>-2147483647</intelligenz>
+      </stats>
+      <bewegung>
+        <grundgeschwindigkeit>-2147483647</grundgeschwindigkeit>
+        <belastungswert>2147483647</belastungswert>
+      </bewegung>
+      <schaden>
+        <schwungschaden>-2147483647</schwungschaden>
+        <stossschaden>-2147483647</stossschaden>
+      </schaden>
+      <faehigkeiten>
+        <physischefaehigkeiten>
+          <fertigkeit name="name5">
+            <beschreibung>beschreibung5</beschreibung>
+            <wert>0</wert>
+          </fertigkeit>
+        </physischefaehigkeiten>
+        <mentalefaehigkeiten>
+          <fertigkeit name="name6">
+            <beschreibung>beschreibung6</beschreibung>
+            <wert>2</wert>
+          </fertigkeit>
+        </mentalefaehigkeiten>
+      </faehigkeiten>
+      <vorteile name="name3">
+        <cp>-2147483647</cp>
+        <beschreibung>beschreibung3</beschreibung>
+      </vorteile>
+      <nachteile name="name3">
+        <cp>-2147483647</cp>
+        <beschreibung>beschreibung3</beschreibung>
+      </nachteile>
+      <marotten name="name3">
+        <cp>-2147483647</cp>
+        <beschreibung>beschreibung3</beschreibung>
+      </marotten>
+    </attribute>
+    <inventar>
+      <gegenstand name="name7">
+        <preis>-2147483646</preis>
+        <gewicht>-2147483646</gewicht>
+        <anzahl>-2147483646</anzahl>
+        <itemstats>
+          <reichweite>-2147483646</reichweite>
+          <schadenshoehe>-2147483646</schadenshoehe>
+          <schadenstyp>schadenstyp6</schadenstyp>
+          <fertigkeitswert>-2147483646</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name8">
+        <preis>2147483646</preis>
+        <gewicht>2147483646</gewicht>
+        <anzahl>2147483646</anzahl>
+        <itemstats>
+          <reichweite>2147483646</reichweite>
+          <schadenshoehe>2147483646</schadenshoehe>
+          <schadenstyp>schadenstyp7</schadenstyp>
+          <fertigkeitswert>2147483646</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+      <gegenstand name="name9">
+        <preis>-1</preis>
+        <gewicht>-1</gewicht>
+        <anzahl>-1</anzahl>
+        <itemstats>
+          <reichweite>-1</reichweite>
+          <schadenshoehe>-1</schadenshoehe>
+          <schadenstyp>schadenstyp8</schadenstyp>
+          <fertigkeitswert>-1</fertigkeitswert>
+        </itemstats>
+      </gegenstand>
+    </inventar>
+  </charakter>
+</gurps>

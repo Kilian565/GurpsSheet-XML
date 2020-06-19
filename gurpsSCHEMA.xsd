@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+  <xs:complexType name="charblaetter">
+    <xs:sequence>
+      <xs:element ref="charakter" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="charbogen">
+    <xs:sequence>
+      <xs:element ref="spieler"></xs:element>
+      <xs:element ref="attribute"></xs:element>
+      <xs:element ref="inventar"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:int" use="required"></xs:attribute>
+
+
+  </xs:complexType>
+
+  <xs:complexType name="spielerinfos">
+    <xs:sequence>
+      <xs:element ref="spielername"></xs:element>
+      <xs:element ref="charname"></xs:element>
+      <xs:element ref="charstory"></xs:element>
+      <xs:element ref="gebjahr"></xs:element>
+      <xs:element ref="reihenfolge"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name ="attribute">
+    <xs:sequence>
+      <xs:element ref="stats"></xs:element>
+      <xs:element ref="bewegung"></xs:element>
+      <xs:element ref="schaden"></xs:element>
+      <xs:element ref="faehigkeiten"></xs:element>
+      <xs:element ref="vorteile"></xs:element>
+      <xs:element ref="nachteile"></xs:element>
+      <xs:element ref="marotten"></xs:element>
+    </xs:sequence>
+
+  </xs:complexType>
+
+  <xs:complexType name="stats">
+    <xs:sequence>
+      <xs:element ref="cpgesamt"></xs:element>
+      <xs:element ref="staerke"></xs:element>
+      <xs:element ref="geschicklichkeit"></xs:element>
+      <xs:element ref="intelligenz"></xs:element>
+      <xs:element ref="konstitution"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bewegung">
+    <xs:sequence>
+      <xs:element ref="grundgeschwindigkeit"></xs:element>
+      <xs:element ref="belastungswert"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="schaden">
+    <xs:sequence>
+      <xs:element ref="schwungschaden"></xs:element>
+      <xs:element ref="stossschaden"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="faehigkeiten">
+    <xs:sequence>
+      <xs:element ref="physischefaehigkeiten"></xs:element>
+      <xs:element ref="mentalefaehigkeiten"></xs:element>
+    </xs:sequence>
+
+  </xs:complexType>
+  <xs:complexType name="mentalefaehigkeiten">
+    <xs:sequence>
+
+      <xs:element ref="fertigkeit"></xs:element>
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="physischefaehigkeiten">
+    <xs:sequence>
+
+      <xs:element ref="fertigkeit"></xs:element>
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fertigkeit">
+    <xs:sequence>
+      <xs:element ref="beschreibung"></xs:element>
+      <xs:element ref="wert"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="vorteile">
+    <xs:sequence>
+      <xs:element ref="cp"></xs:element>
+      <xs:element ref="beschreibung"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="nachteile">
+    <xs:sequence>
+      <xs:element ref="cp"></xs:element>
+      <xs:element ref="beschreibung"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="marotten">
+    <xs:sequence>
+      <xs:element ref="cp"></xs:element>
+      <xs:element ref="beschreibung"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="inventar">
+    <xs:sequence>
+      <xs:element ref="gegenstand" maxOccurs="unbounded" minOccurs="0" ></xs:element>
+    </xs:sequence>
+
+  </xs:complexType>
+
+
+  <xs:complexType name="itemstats">
+
+    <xs:all>
+      <xs:element ref="fertigkeitswert"></xs:element>
+      <xs:element ref="schadenstyp"></xs:element>
+      <xs:element ref="schadenshoehe"></xs:element>
+      <xs:element ref="reichweite"></xs:element>
+    </xs:all>
+
+
+
+  </xs:complexType>
+
+  <xs:complexType name="gegenstand">
+    <xs:sequence>
+      <xs:element ref="preis"></xs:element>
+      <xs:element ref="gewicht"></xs:element>
+      <xs:element ref="anzahl"></xs:element>
+      <xs:element ref="itemstats"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+
+
+  <xs:element name="gurps" type="charblaetter"></xs:element>
+  <xs:element name="charakter" type="charbogen"></xs:element>
+  <xs:element name="attribute" type="attribute"></xs:element>
+
+  <xs:element name="spieler" type="spielerinfos" ></xs:element>
+  <xs:element name="spielername" type="xs:string"></xs:element>
+  <xs:element name="charname" type="xs:string"></xs:element>
+  <xs:element name="charstory" type="xs:string"></xs:element>
+  <xs:element name="gebjahr" type="xs:int"></xs:element>
+  <xs:element name="reihenfolge" type="xs:int" ></xs:element>
+
+  <xs:element name="stats" type="stats"></xs:element>
+  <xs:element name="cpgesamt" type="xs:int" default="0"></xs:element>
+  <xs:element name="staerke" type="xs:int" default="0"></xs:element>
+  <xs:element name="geschicklichkeit" type="xs:int" default="0"></xs:element>
+  <xs:element name="intelligenz" type="xs:int" default="0"></xs:element>
+  <xs:element name="konstitution" type="xs:int" default="0"></xs:element>
+  <xs:element name="bewegung" type="bewegung"></xs:element>
+  <xs:element name="grundgeschwindigkeit" type="xs:int" default="0"></xs:element>
+  <xs:element name="belastungswert" type="xs:int"></xs:element>
+
+  <xs:element name="schaden" type="schaden"></xs:element>
+  <xs:element name="schwungschaden" type="xs:int" default="0"></xs:element>
+  <xs:element name="stossschaden" type="xs:int" default="0"></xs:element>
+
+  <xs:element name="faehigkeiten" type="faehigkeiten"></xs:element>
+  <xs:element name="mentalefaehigkeiten" type="mentalefaehigkeiten"></xs:element>
+  <xs:element name="physischefaehigkeiten" type="physischefaehigkeiten"></xs:element>
+  <xs:element name="fertigkeit" type="fertigkeit"></xs:element>
+
+
+  <xs:element name="beschreibung" type="xs:string"></xs:element>
+  <xs:element name="wert" type="xs:int" default="0"></xs:element>
+
+  <xs:element name="vorteile" type="vorteile"></xs:element>
+  <xs:element name="nachteile" type="nachteile"></xs:element>
+  <xs:element name="marotten" type="marotten"></xs:element>
+  <xs:element name="name" type="xs:string"></xs:element>
+  <xs:element name="cp" type="xs:int" default="0"></xs:element>
+
+  <xs:element name="inventar" type="inventar"></xs:element>
+  <xs:element name="gegenstand" type="gegenstand"></xs:element>
+  <xs:element name="preis" type="xs:int" default="1"></xs:element>
+  <xs:element name="gewicht" type="xs:int" default="0"></xs:element>
+  <xs:element name="anzahl" type="xs:int" default="0"></xs:element>
+  <xs:element name="itemstats" type="itemstats"></xs:element>
+  <xs:element name="fertigkeitswert" type="xs:int" default="0"></xs:element>
+  <xs:element name="schadenstyp" type="xs:string" default="0"></xs:element>
+  <xs:element name="schadenshoehe" type="xs:int" default="0"></xs:element>
+  <xs:element name="reichweite" type="xs:int" default="0"></xs:element>
+
+
+
+
+
+</xs:schema>
